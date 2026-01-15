@@ -1,1 +1,66 @@
 # CloudNetworkApps.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Web Launcher</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .game-frame {
+            width: 95%;
+            height: 90%;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(0, 176, 111, 0.2);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .btn {
+            color: #00b06f;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-frame">
+        <iframe 
+            src="https://www.easyfun.gg/games/roblox.html" 
+            allow="autoplay; fullscreen; keyboard">
+        </iframe>
+    </div>
+
+    <div class="controls">
+        <a href="https://now.gg/apps/roblox-corporation/5349/roblox.html" class="btn">Mirror Link (Now.gg)</a>
+        <span style="color:#555">|</span>
+        <a href="#" onclick="location.reload();" class="btn">Refresh Game</a>
+    </div>
+
+</body>
+</html>
